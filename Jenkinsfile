@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        nodejs 'node-latest' // Asegúrate de configurar esto en Jenkins -> Global Tool Configuration
+        nodejs 'node20'
     }
 
     stages {
@@ -23,13 +23,6 @@ pipeline {
                 sh 'npm run build'
             }
         }
-
-        // Descomenta esto si tienes tests configurados
-        // stage('Test') {
-        //     steps {
-        //         sh 'npm test'
-        //     }
-        // }
     }
 
     post {
