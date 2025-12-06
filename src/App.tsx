@@ -11,10 +11,12 @@ export default function App() {
   }
 
   return (
-    <DashboardPage 
-      currentView={currentView} 
+    <DashboardPage
+      currentView={currentView}
       onViewChange={setCurrentView}
       onLogout={() => setIsLoggedIn(false)}
     />
   );
 }
+
+// afafa
